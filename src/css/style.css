@@ -1,0 +1,1033 @@
+* {
+    box-sizing: border-box;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    z-index: 1;
+}
+.navbar-toggle .icon-bar{
+    background: white;
+}
+
+.header .navbar-nav a {
+    font-family: "open_sansregular";
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #eaeaea;
+    line-height: 22px;
+}
+.header .navbar-nav a:hover,
+.header .navbar-nav a:focus {
+    background: transparent;
+    color: white;
+}
+
+/* END HEADEER */
+
+/* SECTION-1*/
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.section-1 h1 {
+    font-family: "dosisregular";
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+    text-indent: 50px;
+    color: #f6f6f6;
+    margin-bottom: 100px;
+}
+.section-1 span {
+    display: block;
+    font-family: "open_sanslight";
+    font-size: 24px;
+    color: #e2e2e2;
+}
+.section-1 .content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+}
+.scroll-down-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 35px;
+    
+}
+@media screen and (min-width:768px) and (max-width:997px){
+    .section-1 h1{
+        line-height: 2;
+        text-indent: initial;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .section-1 h1{
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin-bottom: 60px;
+        text-indent: initial;
+    }
+    .section-1 .content-wrapper span{
+        padding: 0 20px;
+    }
+}
+
+/* END SECTION-1 */
+
+/* SECTION-2*/
+.section-2 {
+    padding: 140px 0;
+    border-bottom: 1px solid #ddd;
+}
+.section-2 h4 {
+    font-family: "dosisregular";
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 75px;
+    padding: 0 15px;
+}
+.articles blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.articles blockquote footer {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "open_sansregular";
+    letter-spacing: 2px;
+}
+.articles blockquote p {
+    font-family: "open_sanslight";
+    font-size: 24px;
+    line-height: 1.4;
+}
+.articles p {
+    font-family: "open_sanslight";
+    font-size: 14px;
+    line-height: 1.6;
+}
+.section-2 .team img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-2 .image-wrapper{
+    position: relative;
+}
+
+.section-2 .skills{
+    position: absolute;
+    top: 0%;
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+     transform: scale(0.5); 
+     opacity: 0;
+     transition: 0.3s;
+    background-color: black;
+}
+.section-2 .skills p{
+    font-family: "open_sans";
+    font-size: 14px;
+    line-height: 1.4;
+    color: gainsboro;
+    padding-bottom: 15px;
+}
+.section-2 .skills h3{
+    font-family: "open_sans";
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+
+.section-2 .skills span{
+    color: white;
+    font-family: "dosisregular";
+    text-transform: uppercase;
+}
+
+.section-2  .name{
+    color: dimgray; 
+    font-family: "dosisregular";
+    text-transform: uppercase;
+    font-size:15px;
+    letter-spacing: 5px;
+
+}
+
+.section-2  .prof{
+    color: dimgray; 
+    font-family: "dosisregular";
+    text-transform: uppercase;
+    font-size:10px;
+    letter-spacing: 3px;
+}
+
+.image-wrapper:hover .skills{
+     opacity: 1; 
+    transform: scale(1);
+}
+
+.section-2 .progress{
+    background: rgb(49, 49, 49);
+    border-radius: 0;
+    height: 15px;
+}
+
+.progress .progress-bar{
+    background: gray;
+}
+
+@media screen and (max-width:991px){
+    .section-2{
+        padding: 70px 20px;
+    }
+    .section-2 .articles .col-md-4{
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+    }
+    .section-2 .articles footer{
+        margin-bottom: 20px;
+    }
+    .section-2 .team{
+        margin-top: 20px;
+    }
+}
+
+
+/* END SECTION-2 */
+
+/* SECTION-3*/
+
+.section-3{
+    padding: 140px 0 170px;
+}
+
+.section-3 h4{
+    text-transform: uppercase;
+    font-family: "dosisregular","sans-serif";
+    color:#111111;
+    letter-spacing: 10px;
+    text-align: center;
+
+}
+.section-3 .tab-content{
+    margin-top: 80px;
+
+}
+.section-3 .nav-tabs li{
+    width: 20%;
+    text-align: center;
+}
+
+.section-3 .nav-tabs li span{  
+    display: block;
+}
+
+.section-3 .nav-tabs {
+border: none;
+}
+
+.section-3 .nav-tabs li span:first-child{
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.section-3 .nav-tabs li span:last-child{
+    font-family: "dosisregular","sans-serif";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.section-3 .nav-tabs li a {
+    color:#888888;
+    background: transparent;
+    border: none;
+}
+
+.section-3 .nav-tabs li.active a,
+.section-3 .nav-tabs li a:hover,
+.section-3 .nav-tabs li a:active,
+.section-3 .nav-tabs li a:focus{
+    color: #111111;
+    background: transparent;
+    border: none;
+}
+  .section-3 .articles{
+    margin: 0; 
+} 
+
+@media screen and (max-width:768px){
+.section-3 .nav-tabs li{
+        width: 50%;
+    }
+
+.section-3 .nav-tabs li:last-child:not(:nth-child(even)){
+        float: none;
+        margin: 0 auto;
+        clear: both;
+    }
+}
+
+@media screen and (max-width:991px){
+.section-3{
+        padding: 70px;
+    
+    }
+}
+
+
+
+/* END SECTION-3 */
+
+/* SECTION-4*/
+
+.section-4{
+    background: #111111;
+     padding:  0;
+}
+.section-4 .content{
+    padding: 140px 0;
+}
+
+.section-4 h4{
+    color: #ffffff;
+    font-family: "dosisregular","sans-serif";
+    text-transform: uppercase;
+    letter-spacing:5px;
+}
+.section-4 img{
+    width: 100%;
+}
+
+.section-4 p{
+    font-size: 15px;
+    color: #bbbbbb;
+    font-family: "open_sanslight";
+    margin: 25px 0 40px;  
+}
+
+.section-4 button.btn{
+    padding: 10px 40px;
+    font-size: 14px;
+    border-radius: 1px;
+    font-family: "open_sansregular";
+}
+
+.section-4 .img-container{
+transform: translateY(-40px);
+}
+
+
+@media screen and (max-width:991px){
+    .section-4{
+        padding: 70px 20px;
+        text-align: center;
+    }
+    .section-4 img{
+        transform: translateY(0);
+        width: 100%;
+    }
+
+}
+
+
+
+/* END SECTION-4 */
+
+/* SECTION-5*/
+
+
+.section-5{
+    padding-top: 140px;
+    background: #ffffff;
+
+}
+.section-5 h4{
+    text-transform: uppercase;
+    font-family: "dosisregular","sans-serif";
+    color:#111111;
+    letter-spacing: 10px;
+    text-align: center; 
+}
+
+
+.section-5 .nav-tabs li{
+    text-align: center;
+    display: inline-block;
+    float: none;
+    margin: 0 20px;
+}
+
+.section-5  p{
+    font-family: "open_sanslight";
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section-5 .nav-tabs li span{  
+    display: block;
+}
+
+.section-5 .nav-tabs {
+    border: none;
+}
+
+.section-5 .nav-tabs li span:first-child{
+    margin-bottom: 35px;
+    border: none;
+}
+
+.section-5 .nav-tabs li span:last-child{
+    font-family: "open_sanslight","sans-serif";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.section-5 .nav-tabs li a {
+    color:#888888;
+    background: transparent;
+    border: none;
+    letter-spacing: 4px;
+}
+
+.section-5 .nav-tabs li.active a,
+.section-5 .nav-tabs li a:hover,
+.section-5 .nav-tabs li a:active,
+.section-5 .nav-tabs li a:focus{
+    color: #111111;
+    background: transparent;
+    border: none;
+}
+
+.section-5 .color-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+}
+
+.section-5 .img-wrapper{
+    position: relative;
+     padding: 0;  
+}
+
+.section-5 .gray-img{
+    opacity: 1;
+    width: 100%;
+}
+
+.section-5 .img-wrapper:hover .color-img{
+    opacity: 1;
+}
+
+.section-5 .img-wrapper:hover .gray-img{
+    opacity: 0;
+}
+
+@media screen and (max-width:991px){
+    .section-5 {
+        padding-top:70px;
+    }
+    .section-5 p{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .section-5 .img-wrapper{
+        padding: 20px;
+    }
+}
+    .section-5 .slick-slider .slick-dotted{
+        margin-bottom: 0;
+    }
+    .section-5 .slick-dots{
+        bottom: 20px;
+    }
+    .section-5 .slick-dots li button:before{
+        font-size: 60px;
+    }
+    .section-5 .slick-dots li .slick-active button:before{
+        opacity: 1;
+    }
+    .section-5 .slick-dots li button:before{
+        opacity: 0.5;
+    }
+
+
+/* END SECTION-6 */
+
+/* SECTION-6*/
+.section-6{
+    background: #111111;
+    
+    }
+.section-6 .content{
+         
+    display:inline-block;
+    margin: 60px 0;
+    float: none;
+}
+    
+.section-6 h4{
+    color: #ffffff;
+    font-family: "dosis_light";
+    text-transform: uppercase;
+    letter-spacing:5px;
+    font-size:18px;
+}
+    
+.section-6 button.btn{
+    padding: 10px 40px;
+    font-size: 14px;
+    border-radius: 1px;
+    font-family: "opensans";
+    text-transform: uppercase;
+    margin: 20px; 
+    letter-spacing:3px;
+}
+   
+/* END SECTION-6 */
+
+/* SECTION-7*/
+.section-7{
+    padding: 140px 0;
+}
+.section-7 h4{
+    text-transform: uppercase;
+    font-family: "dosisregular","sans-serif";
+    margin-top: 0;
+    letter-spacing: 10px;
+    text-align: center; 
+    margin-bottom: 90px;
+}
+
+.section-7 [class|="icon"]{
+    font-size: 48px;
+} 
+
+.section-7 h5{
+    text-transform: uppercase;
+    font-family: "dosisregular","sans-serif";
+    margin-top: 35px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom:  35px;
+}
+
+.section-7 p{
+    font-family: "open_sanslight";
+}
+
+.section-7 .row>div:nth-of-type(-n+3) {
+    margin-bottom:80px;
+}
+@media screen and (max-width:991px){
+    .section-7{
+        padding: 70px 0;
+    }
+    .section-7 .row>div{
+        margin-bottom: 20px !important;
+    }
+}
+
+/* END SECTION-7 */
+
+/* SECTION-8*/
+
+.section-8{
+    background: #020202;
+}
+
+.section-8 .carousel {
+    padding: 140px 0;
+}
+.section-8 .carousel-control{
+    background: none;
+    text-shadow: none;
+    opacity: 1;
+    border: 70px solid transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0;
+}
+
+.section-8 .carousel-control.left{
+    border-left: 70px solid white;
+}
+
+.section-8 .carousel-control.right{
+    border-right: 70px solid white;
+}
+
+.section-8 .fa{
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-8 .fa.fa-angle-left{
+    left: -40px;
+}
+   
+.section-8 .fa.fa-angle-right{
+    right: -40px;
+}
+
+.section-8 h4{
+    text-transform: uppercase;
+    font-family: "dosisregular","sans-serif";
+    margin-top: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: white;
+    padding: 15px;
+}
+
+.section-8 .carousel-inner {
+    overflow: hidden;
+    position: relative;
+
+} 
+.section-8 .carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+}
+@media screen and (max-width:991px){
+    .section-8 .carousel{
+padding: 140px 0;
+    }
+    .section-8 .carousel-control{
+     
+        border: 30px solid transparent;
+    }
+    
+    .section-8 .carousel-control.left{
+        border-left: 30px solid white;
+    }
+    
+    .section-8 .carousel-control.right{
+        border-right: 30px solid white;
+    }
+
+    .section-8 .fa.fa-angle-left{
+        left: -25px;
+    }
+       
+    .section-8 .fa.fa-angle-right{
+        right: -25px;
+    }
+    
+}
+
+/* END SECTION-8 */
+
+/* SECTION-9*/
+
+
+.section-9{
+    background: #ffffff;
+}
+
+.section-9 .information{
+     margin-top: 100px;
+}
+.section-9 .row{
+    margin-bottom: 100px;
+}
+
+.section-9 h4 {
+    font-family:"dosisregular";
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:black;
+    margin-bottom: 45px;
+}
+.section-9 h3 {
+    font-family:"dosisregular";
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:gray;
+    }
+.section-9 h5 {
+     font-family:"dosisregular";
+     font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:gray;
+    }
+.section-9 p {
+    font-family:"open_sanslight";
+    color:gray;
+} 
+
+ .section-9 a{
+    text-decoration: none; 
+} 
+  .section-9 .blog p {
+    color:gray;
+    margin-bottom: 45px;
+    text-decoration: none;
+    text-align: right;
+    font-family:"dosisregular";
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family:"dosisregular";
+    letter-spacing: 3px;
+}  
+
+.section-9 .btn-default{
+    padding: 8px 15px;
+    font-size: 11px;
+    border-radius: 1px;
+    font-family: "opensans";
+    text-transform: uppercase;
+    margin: 5px;
+    letter-spacing: 3px;
+    border: none;
+    background:#e5e5e5;
+    color: gray;
+    }
+
+
+.section-9 .color-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    padding: 25px;
+}
+
+.section-9 .img-wrapper{
+position: relative;
+  padding: 0;  
+}
+
+.section-9 .gray-img{
+    opacity: 1;
+    width: 100%;  
+    padding: 25px;
+}
+
+.section-9 .img-wrapper:hover .color-img{
+    opacity: 1;
+}
+
+.section-9 .img-wrapper:hover .gray-img{
+    opacity: 0;
+}
+@media screen and (max-width:991px){
+    .section-9{
+        padding: 70px 0;
+    }
+    .section-9 h4,h3,h5{
+        text-align: center;
+    }
+    .section-9 .col-md-4{
+        margin-bottom: 50px;
+    }
+}
+
+/* END SECTION-9 */
+
+/* SECTION-10*/
+
+.section-10{
+    background: #f8f8f8;
+    }
+
+.section-10 .content{
+    display: inline-block;
+    padding: 85px 20px;
+    float: none;
+    }
+
+.section-10 h4{
+        color: black;
+        font-family: "dosislight";
+        text-transform: uppercase;
+        letter-spacing:5px;
+        font-size:16px;
+    }
+.section-10 form input {
+        padding: 18px 15px;
+        text-transform: uppercase;
+        font-size: 10px; 
+        letter-spacing: 3px;
+        font-family: "opensans";
+    }  
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+        margin-left: 8px;
+    }
+.section-10 span{
+        color: #aaaaaa;
+        font-family: "opensans";
+        font-size: 11px;
+    }
+    
+.section-10  .btn-default{
+    font-family: "opensans";
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #323232;
+    border-radius: 4px;
+    text-shadow: none;
+    padding: 8px 7px;
+    letter-spacing: 3px;
+    color: white;
+   
+}
+@media screen and (max-width:991px){
+    .section-10{
+        padding: 60px 0;
+    }
+    .section-10 h4{
+        line-height: 2;
+    }
+}
+
+    
+/* END SECTION-10 */
+
+/* SECTION-11*/
+.section-11{
+    padding: 140px 0;
+
+}
+.section-11 h4{
+    text-transform: uppercase;
+    font-family: "dosisregular","sans-serif";
+    letter-spacing: 10px;
+    text-align: center; 
+    color: black;
+    margin-bottom: 100px;
+}
+.section-11 .content span {
+    display: block;
+}
+.section-11 .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section-11 .col-md-4>div {
+    display:inline-block;
+    vertical-align: middle;
+}
+.section-11 .content span:first-child {
+    font-family: "dosisregular";
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.section-11 .content span:last-child{
+    font-size: 15px;
+    font-family:"open_sanslight";
+}
+.section-11 .icon-wrapper .fa{
+    color: white;
+    transform:translate(-50%,-50%) rotate(-45deg) ;
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+
+.section-11 .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    background: black;  
+     margin-bottom: 10px;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+
+.section-11 .content{
+    margin-left: 15px;
+}
+.section-11 form input{
+    padding:  19px 15px;
+   
+}
+
+.section-11 .row:first-child{
+    margin-bottom: 80px;
+
+}
+.section-11 form .text{
+    color: #aaaaaa;
+    font-family: "opensans";
+    font-size: 11px;
+}
+.section-11 form .btn {
+    font-family: "opensans";
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #323232;
+    border-radius: 4px;
+    text-shadow: none;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    color: white;
+}
+@media screen and (max-width:991px){
+    .section-11 .col-md-4{
+        text-align: left;
+       margin-bottom: 30px;
+    }
+}
+
+/* END SECTION-11 */
+
+/* SECTION-12*/
+.section-12{
+    position: relative;
+}
+.section-12 iframe{
+    width: 100%;
+}
+.section-12 .overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-in;
+}
+
+.section-12:hover .overlay {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.section-12 .overlay h4 {
+    font-family: "dosisregular";
+    font-size: 16px;
+    text-transform:uppercase;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    
+}
+.section-12 .icon-wrapper .fa{
+    transform:translate(-50%,-50%) rotate(-45deg) ;
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+
+.section-12 .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    position: relative;
+    display: inline-block;
+}
+.section-12 .content-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.section-12 .overlay::before{
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* END SECTION-12 */
+
+/* SECTION-13*/
+
+.section-13 {
+background: white;
+padding: 140px;
+}
+ .section-13 .content{
+    margin: 60px;
+    float: none;
+} 
+
+.section-13 .content span {
+    display:block;
+}
+
+.section-13 .content span:first-child {
+    font-family: "dosisregular";
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.section-13 .content span:last-child{
+    font-size: 15px;
+    font-family:"open_sanslight";
+}
+.section-13 .icon-wrapper .fa{
+    color:black;
+    transform:translate(-50%,-50%) rotate(-45deg) ;
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+.section-13 .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    background:white;
+    border: 1px solid black;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    display: inline-block;
+    margin: 10px;
+}
+.section-13 .wrapper{
+    margin-bottom: 20px;
+}
+
+
+.section-13 h4 {
+    font-family: "dosisregular";
+    font-size: 15px;
+    text-transform:uppercase;
+    color: black;
+    letter-spacing: 5px;
+    margin-top: 30px;  
+}
+
+.section-13 .info{
+    color: #aaaaaa;
+    font-family: "opensans";
+    font-size: 10px;
+}
+
+.section-13 .icon{
+    position: absolute;
+    top: 81%;
+    left: 43%;
+}
